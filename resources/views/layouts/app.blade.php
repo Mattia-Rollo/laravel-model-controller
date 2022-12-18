@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+    @include('layouts.partials.header')
     <h1 class="py-5 text-center">@yield('title','Home')</h1>
     <main>
         @yield('content')
