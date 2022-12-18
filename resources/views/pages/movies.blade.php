@@ -18,6 +18,9 @@
             <div class="card-body">
               <h5 class="card-title">{{$movie->title}}</h5>
               <p class="card-text">{{$movie->original_title}}</p>
+              <p class="card-text">{{date('d-m-Y', strtotime($movie->date))}}</p>
+              <p class="card-text">voto: {{$movie->vote}}</p>
+              <p class="card-text">{{$movie->nationality}}</p>
             </div>
           </div>
         </div>
