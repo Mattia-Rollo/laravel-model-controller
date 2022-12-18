@@ -17,7 +17,7 @@
 
 <body>
 
-    <h1>@yield('title','Home')</h1>
+    <h1 class="py-5 text-center">@yield('title','Home')</h1>
     <main>
         @yield('content')
     </main>
