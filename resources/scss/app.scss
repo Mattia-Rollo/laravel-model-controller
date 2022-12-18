@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+body {
+    background-color: linear-gradient(to top, rgb(255, 255, 255), #ddd);
+}
+
 img {
     height: 60vh;
     object-fit: cover;
@@ -9,5 +13,5 @@ img {
     transform: scale(1.2);
 }
 .card-header {
-    height: 100px;
+    height: 90px;
 }

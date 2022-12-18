@@ -6,8 +6,8 @@
 
 
 @section('content')
-<div class="container">
-    <div class="row row-cols-md-4 g-2">
+<div class="container py-2">
+    <div class="row row-cols-md-4 row-cols-sm-4 row-cols-2 g-2">
         @forelse ($movies as $movie)
         <div class="col">
         <div class="card h-100 overflow-hidden">
