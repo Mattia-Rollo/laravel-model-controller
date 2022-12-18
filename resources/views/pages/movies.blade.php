@@ -12,15 +12,24 @@
         <div class="col">
         <div class="card h-100 overflow-hidden">
             <div class="overflow-hidden">
-            
                 <img src="{{$movie->image}}" class="card-img-top" alt="...">
-        </div>
-            <div class="card-body">
-              <h5 class="card-title">{{$movie->title}}</h5>
-              <p class="card-text">{{$movie->original_title}}</p>
-              <p class="card-text">{{date('d-m-Y', strtotime($movie->date))}}</p>
-              <p class="card-text">voto: {{$movie->vote}}</p>
-              <p class="card-text">{{$movie->nationality}}</p>
+            </div>
+            <div class="">
+              <div class="card-header">
+                  <h5 class="card-title text-center">{{$movie->title}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted text-center">
+              {{$movie->original_title}}</h6>
+              </div>
+              <p class="card-text"></p>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">uscita: {{date('d-m-Y', strtotime($movie->date))}}</li>
+                <li class="list-group-item">voto: {{$movie->vote}}</li>
+                <li class="list-group-item">Nazionalità: {{$movie->nationality}}</li>
+              </ul>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
